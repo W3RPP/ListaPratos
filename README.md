@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+### README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lista de Pratos Favoritos
 
-## Available Scripts
+Este é um projeto simples de uma aplicação em React que permite ao usuário criar uma lista dos seus pratos favoritos e atribuir uma nota a cada prato. O objetivo é demonstrar a utilização de estados, hooks e manipulação de formulários em React.
 
-In the project directory, you can run:
+## Tema
 
-### `npm start`
+O tema do projeto é uma lista de pratos favoritos onde o usuário pode adicionar o nome do prato e uma nota para cada um. A lista de pratos é exibida logo abaixo dos campos de entrada.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalação
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Siga as instruções abaixo para instalar e executar a aplicação localmente.
 
-### `npm test`
+### Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (versão 12 ou superior)
+- npm (geralmente vem junto com o Node.js)
 
-### `npm run build`
+### Passos para instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone o repositório:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/seu-usuario/lista-de-pratos.git
+   cd lista-de-pratos
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Instale as dependências:**
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Inicie a aplicação:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   A aplicação estará disponível em `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Uso
 
-## Learn More
+1. Abra a aplicação em seu navegador.
+2. Insira o nome de um prato no campo "Nome do prato".
+3. Insira uma nota no campo "Nota".
+4. Clique no botão "Adicionar Prato" para adicionar o prato à lista.
+5. Os pratos adicionados serão exibidos na lista abaixo dos campos de entrada.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Componentes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ListDishes
 
-### Code Splitting
+Este é o componente principal da aplicação. Ele gerencia o estado dos pratos, o nome do prato e a nota do prato. Ele também lida com a adição de novos pratos à lista.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Estados:**
+  - `pratos`: Um array que armazena os pratos adicionados e suas respectivas notas.
+  - `prato`: Uma string que representa o nome do prato atual sendo adicionado.
+  - `nota`: Uma string que representa a nota do prato atual sendo adicionado.
 
-### Analyzing the Bundle Size
+- **Funções:**
+  - `adicionarPrato`: Uma função que adiciona um novo prato à lista se ambos os campos (`prato` e `nota`) estiverem preenchidos. Após adicionar, limpa os campos de entrada.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Renderização:**
+  - Um título.
+  - Dois campos de entrada: um para o nome do prato e outro para a nota.
+  - Um botão para adicionar o prato à lista. O botão é desabilitado se algum dos campos estiver vazio.
+  - Uma lista que exibe os pratos adicionados e suas respectivas notas.
 
-### Making a Progressive Web App
+## Estilos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Os estilos da aplicação são definidos no arquivo `ListDishes.css`, que é importado no componente `ListDishes`. Este arquivo contém estilos básicos para o layout e formatação da aplicação.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto é uma excelente maneira de aprender e praticar conceitos básicos de React, como gerenciamento de estado com hooks, renderização condicional e manipulação de formulários. Sinta-se à vontade para modificar e expandir a aplicação conforme necessário.

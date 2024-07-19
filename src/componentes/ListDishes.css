@@ -1,0 +1,39 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Lista {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+div{
+    background-color: aquamarine;
+}
+
+#input1{
+    border: none;
+}
+
+#input2{
+    border: none;
+}
+
+#ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lista2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
