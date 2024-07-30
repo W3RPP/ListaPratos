@@ -1,39 +1,87 @@
-.body {
+/* ListDishes.css */
+
+body {
+    background-color: #fff3e0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
-}
-
-.Lista {
+  }
+  
+  #titulo {
+    color: #d32f2f;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .Lista {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 2.5vh;
-}
-
-div{
-    background-color: aquamarine;
-}
-
-#input1{
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .Lista input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 200px;
+  }
+  
+  #input1:focus, #input2:focus {
+    outline: none;
+    border-color: #d32f2f;
+  }
+  
+  #botao, #botao-editar, #botao-excluir {
+    background-color: #fdd835;
+    color: #d32f2f;
     border: none;
-}
-
-#input2{
-    border: none;
-}
-
-#ul{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #botao:disabled, #botao-editar:disabled, #botao-excluir:disabled {
+    background-color: #fbc02d;
+    cursor: not-allowed;
+  }
+  
+  #botao:hover:not(:disabled), #botao-editar:hover:not(:disabled), #botao-excluir:hover:not(:disabled) {
+    background-color: #f9a825;
+  }
+  
+  #ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #ul li {
+    background-color: #fff9c4;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #fbc02d;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lista2 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.lista2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  }
+  
+  .lista2 button {
+    margin-left: 10px;
+  }
+  
